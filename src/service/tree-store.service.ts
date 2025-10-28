@@ -14,6 +14,9 @@ export class TreeStore {
   }
 
   fillItemsMaps() {
+    this._itemsMapById = {}
+    this._itemsChildrenMap = {}
+
     this._items.forEach((item) => {
       const itemId = item.id
       const itemParentId = item.parent
